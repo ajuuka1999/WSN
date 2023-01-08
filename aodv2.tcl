@@ -203,7 +203,7 @@ proc finish {} {
     $ns flush-trace
     close $tracefile
     close $namfile
-    exec nam aodv2.nam &
+    exec ./nam aodv2.nam &
     exit 0
 }
 for {set i 0} {$i < $val(nn) } { incr i } {
